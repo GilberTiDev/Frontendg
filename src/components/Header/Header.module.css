@@ -1,0 +1,81 @@
+.headerContainer {
+  background-color: var(--white);
+  padding: 16px 32px;
+  border-bottom: 1px solid var(--light-gray-2);
+}
+
+.topBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--light-gray-2);
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+
+.searchBar input {
+  border: none;
+  outline: none;
+  padding: 4px;
+}
+
+.searchBar img {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.cadastroLink {
+  font-size: 16px;
+  color: var(--dark-gray-2);
+  text-decoration: underline;
+}
+
+.entrarButton {
+  background-color: var(--primary);
+  color: var(--white);
+  font-weight: bold;
+  font-size: 14px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.cartIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.mainNavigation {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 16px;
+}
+
+.mainNavigation a {
+  text-decoration: none;
+  color: var(--dark-gray-2);
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+}
+
+.mainNavigation a:hover {
+  color: var(--primary);
+}
+
+.activeLink {
+  color: var(--primary);
+  border-bottom: 2px solid var(--primary);
+}

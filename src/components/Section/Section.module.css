@@ -1,0 +1,30 @@
+.sectionContainer {
+  margin: 40px 0;
+}
+
+.titleRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.title {
+  color: var(--dark-gray-2);
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.title.center {
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.link {
+  color: var(--primary);
+  font-size: 18px;
+  text-decoration: none;
+  margin-left: auto;
+}
