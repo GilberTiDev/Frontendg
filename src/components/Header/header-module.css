@@ -1,0 +1,81 @@
+.header-container {
+  background-color: white;
+  padding: 16px 32px;
+  border-bottom: 1px solid black;
+}
+
+.topBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--light-gray-2);
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+
+.search-Bar input {
+  border: none;
+  outline: none;
+  padding: 4px;
+}
+
+.search-Bar img {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.cadastro-Link {
+  font-size: 16px;
+  color: var(--dark-gray-2);
+  text-decoration: underline;
+}
+
+.entrar-Button {
+  background-color: var(--primary);
+  color: var(--white);
+  font-weight: bold;
+  font-size: 14px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.cart-Icon {
+  width: 24px;
+  height: 24px;
+}
+
+.main-Navigation {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 16px;
+}
+
+.main-Navigation a {
+  text-decoration: none;
+  color: var(--dark-gray-2);
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+}
+
+.main-Navigation a:hover {
+  color: var(--primary);
+}
+
+.active-Link {
+  color: var(--primary);
+  border-bottom: 2px solid var(--primary);
+}

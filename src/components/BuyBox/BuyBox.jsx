@@ -1,6 +1,5 @@
-// src/components/BuyBox.jsx
-import React from 'react';
-import starIcon from '../assets/star-icon.svg';
+
+import images from '../img'
 import './BuyBox.css';
 
 const BuyBox = ({
@@ -18,7 +17,7 @@ const BuyBox = ({
       <h1 className="productName">{name}</h1>
       <p className="reference">Ref: {reference}</p>
       <div className="ratingBox">
-        <span className="stars">{stars} <img src={starIcon} alt="star" /></span>
+        <span className="stars">{stars} <img src={images.starIcon} alt="star" /></span>
         <span className="rating">({rating} avaliações)</span>
       </div>
       <div className="priceBox">

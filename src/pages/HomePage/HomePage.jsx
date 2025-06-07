@@ -1,8 +1,7 @@
 import React from 'react';
-import Layout from '@/components/Layout';
-import Gallery from '@/components/Gallery/Gallery';
-import Section from '@/components/Section/Section';
-import ProductListing from '@/components/ProductListing/ProductListing';
+import Gallery from '../../components/Gallery/Gallery.jsx';
+import Section from '../../components/Section/Section.jsx';
+import ProductListing from '../../components/ProductListing/ProductListing.jsx';
 
 export default function HomePage() {
   const galleryImages = [
@@ -66,7 +65,9 @@ export default function HomePage() {
   ];
 
   return (
-    <Layout>
+   <>
+   
+  
       {/* 5.1 Slide de imagens */}
       <Gallery
         width="1440px"
@@ -94,6 +95,6 @@ export default function HomePage() {
       <Section title="Produtos em alta" titleAlign="left">
         <ProductListing products={topProducts} />
       </Section>
-    </Layout>
+     </>
   );
 }

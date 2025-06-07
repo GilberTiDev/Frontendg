@@ -1,11 +1,10 @@
 // src/pages/ProductViewPage.jsx
 import React from 'react';
-import Layout from '../components/Layout';
-import Gallery from '../components/Gallery';
-import BuyBox from '../components/BuyBox';
-import ProductOptions from '../components/ProductOptions';
-import Section from '../components/Section';
-import ProductListing from '../components/ProductListing';
+import Gallery from '../../components/Gallery/Gallery.jsx';
+import BuyBox from '../../components/BuyBox/BuyBox.jsx';
+import ProductOptions from '../../components/ProductOptions/ProductOptions.jsx';
+import Section from '../../components/Section/Section.jsx';
+import ProductListing from '../../components/ProductListing/ProductListing.jsx';
 import './ProductViewPage.css';
 
 const ProductViewPage = () => {
@@ -30,7 +29,7 @@ const ProductViewPage = () => {
   ];
 
   return (
-    <Layout>
+    <>
       <div className="productViewPage">
         <Gallery
           images={galleryImages}
@@ -69,7 +68,7 @@ const ProductViewPage = () => {
       >
         <ProductListing products={recommendedProducts} />
       </Section>
-    </Layout>
+     </>
   );
 };
 

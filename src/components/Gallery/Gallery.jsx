@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import styles from './Gallery.module.css';
-import ArrowLeft from '@/assets/icons/arrow-left.svg';
-import ArrowRight from '@/assets/icons/arrow-right.svg';
+import imagens from '../img'
 
 export default function Gallery({ className = '', width = '100%', height = 'auto', radius = '0px', showThumbs, images = [] }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -29,7 +28,7 @@ export default function Gallery({ className = '', width = '100%', height = 'auto
         onClick={goPrev}
         disabled={currentIndex === 0}
       >
-        <img src={ArrowLeft} alt="Anterior" />
+        <img src={imagens.ArrowLeft} alt="Anterior" />
       </button>
 
       <img
@@ -44,7 +43,7 @@ export default function Gallery({ className = '', width = '100%', height = 'auto
         onClick={goNext}
         disabled={currentIndex === images.length - 1}
       >
-        <img src={ArrowRight} alt="Próxima" />
+        <img src={imagens.ArrowRight} alt="Próxima" />
       </button>
 
       {/* Miniaturas */}
